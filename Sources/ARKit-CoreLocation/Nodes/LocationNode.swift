@@ -122,7 +122,7 @@ open class LocationNode: SCNNode {
 
         let adjustedDistance: CLLocationDistance
         if locationConfirmed && (distance > 100 || continuallyAdjustNodePositionWhenWithinRange || setup) {
-            if distance > 100 {
+            if distance > 1 {
                 //If the item is too far away, bring it closer and scale it down
                 let scale = 100 / Float(distance)
 
